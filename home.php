@@ -19,41 +19,103 @@ session_start();
     <script src="main.js"></script>
 </head>
 <body>
-    <h1>J & M Rentals</h1>
-    <p>Hello there!!</p>
+    <h1 id="title">J & M Rentals</h1>
 
-    <div class="car">
+    <!-- <div class="car">
     <img src="civic.jpg">
     <input type="submit" name="submit" value="Rent" class="button">
-    </div>
+    </div> -->
 
         <div class="center">
       <div class="card">
-        <i class="fab fa-facebook"></i>
+      <img src="civic.jpg" id="car">
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
           debitis a. Atque ipsum minus rerum consequatur, officiis doloremque
           ullam soluta ex consectetur inventore facilis nam optio sunt cum unde
           repudiandae.
         </p>
+        <input type="submit" name="submit" value="Rent" class="button">
+        <style>
+        .button {
+          border: 1px solid #010619;
+          border-radius: 10px;
+          padding: 10px 25px;
+          background: none;
+          margin: 5px 0;
+        }
+
+        #car {
+          width: 70%;
+        }
+
+        @media only screen and (max-width: 1000px) {
+        #car {
+          width: 100%;
+          }
+        }
+
+        #title {
+          text-align: center;
+        }
+        </style>
       </div>
       <div class="card">
-        <i class="fab fa-instagram"></i>
+      <img src="civic.jpg" id="car">
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
           debitis a. Atque ipsum minus rerum consequatur, officiis doloremque
           ullam soluta ex consectetur inventore facilis nam optio sunt cum unde
           repudiandae.
         </p>
+        <input type="submit" name="submit" value="Rent" class="button">
+
       </div>
       <div class="card">
-        <i class="fab fa-telegram-plane"></i>
+      <img src="civic.jpg" id="car">
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
           debitis a. Atque ipsum minus rerum consequatur, officiis doloremque
           ullam soluta ex consectetur inventore facilis nam optio sunt cum unde
           repudiandae.
         </p>
+        <input type="submit" name="submit" value="Rent" class="button">
+      </div>
+    </div>
+
+
+    <br>
+
+     <div class="center">
+      <div class="card">
+      <img src="civic.jpg" id="car">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
+          debitis a. Atque ipsum minus rerum consequatur, officiis doloremque
+          ullam soluta ex consectetur inventore facilis nam optio sunt cum unde
+          repudiandae.
+        </p>
+        <input type="submit" name="submit" value="Rent" class="button">
+      </div>
+      <div class="card">
+      <img src="civic.jpg" id="car">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
+          debitis a. Atque ipsum minus rerum consequatur, officiis doloremque
+          ullam soluta ex consectetur inventore facilis nam optio sunt cum unde
+          repudiandae.
+        </p>
+        <input type="submit" name="submit" value="Rent" class="button">
+
+      </div>
+      <div class="card">
+      <img src="civic.jpg" id="car">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
+          debitis a. Atque ipsum minus rerum consequatur, officiis doloremque
+          ullam soluta ex consectetur inventore facilis nam optio sunt cum unde.
+        </p>
+        <input type="submit" name="submit" value="Rent" class="button">
       </div>
     </div>
 

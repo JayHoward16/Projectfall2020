@@ -25,10 +25,6 @@ p {
   margin-inline-end: 0px;
 }
 
-.car {
-  position: relative;
-}
-
 .center {
   margin: 3% 10%;
   display: flex;
