@@ -31,7 +31,7 @@ require 'configdb.php';
     <div class="car">
     <img width="940" height="427" src="images/civic.jpg">
     
-    <input type="submit" name="Rent1" value="Rent Me" class="button">
+    
     </div>
 <div class="container-fluid text-center bg-grey">
    <div class="row text-center">
