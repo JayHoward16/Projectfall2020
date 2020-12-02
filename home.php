@@ -1,4 +1,4 @@
-<?php 
+<?php
 include 'configdb.php';
 session_start();
 ?>
@@ -29,7 +29,7 @@ session_start();
 </head>
 <body>
 
-    
+
 <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
   <a class="navbar-brand" href="#">J & M Rentals</a>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="true">
@@ -38,32 +38,32 @@ session_start();
   <div id="navb" class="navbar-collapse collapse hide">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://github.com/JayHoward16/Projectfall2020/blob/main/README.md">About us</a>
       </li>
-    
+
     </ul>
 
     <ul class="nav navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#"><span class="fas fa-user"></span> Sign Up</a>
+        <a class="nav-link" href="registrationform.php"><span class="fas fa-user"></span> Sign Up</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><span class="fas fa-sign-in-alt"></span> Login</a>
+        <a class="nav-link" href="loginjm.php"><span class="fas fa-sign-in-alt"></span> Login</a>
       </li>
     </ul>
   </div>
 </nav>
-    
-    
-    
+
+
+
     <h1 id="title">Car Rental for Professionals</h1>
 
-    
-  
-    
+
+
+
         <div class="center">
                 <style>
         .button {
@@ -90,19 +90,17 @@ session_start();
         </style>
       <div class="card">
            <a  href="rentalcar1.php">
-      <img src="images/civic.jpg" id="car">
+      <img src="images/display.jpg" id="car">
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
-          debitis a. Atque ipsum minus rerum consequatur, officiis doloremque
-          ullam soluta ex consectetur inventore facilis nam optio sunt cum unde
-          repudiandae.
+          2020 Civic Type R
         </p>
          </a>
-       
-    
-               
+
+
+
       </div>
       <div class="card">
+
       <img src="images/civic.jpg" id="car">
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
@@ -110,8 +108,8 @@ session_start();
           ullam soluta ex consectetur inventore facilis nam optio sunt cum unde
           repudiandae.
         </p>
-          
-        <input  type="submit" formaction='/rentalcar1.php' value="Rent" class="button">
+
+        <input  type="submit" formaction='rentalcar1.php' value="Rent" class="button">
 
       </div>
       <div class="card">
@@ -122,8 +120,8 @@ session_start();
           ullam soluta ex consectetur inventore facilis nam optio sunt cum unde
           repudiandae.
         </p>
-          
-          
+
+
         <input type="submit" formaction='/rentalcar1.php' value="Rent" class="button">
       </div>
     </div>
