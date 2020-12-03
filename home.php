@@ -38,7 +38,7 @@ session_start();
   <div id="navb" class="navbar-collapse collapse hide">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="home.php">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://github.com/JayHoward16/Projectfall2020/blob/main/README.md">About us</a>
@@ -87,44 +87,40 @@ session_start();
         #title {
           text-align: center;
         }
+
+          span {
+          color: #2e3131;
+          font-weight: 700;
+        }
         </style>
       <div class="card">
            <a  href="rentalcar1.php">
       <img src="images/civic.jpg" id="car">
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
-          debitis a. Atque ipsum minus rerum consequatur, officiis doloremque
-          ullam soluta ex consectetur inventore facilis nam optio sunt cum unde
-          repudiandae.
+          <span>2020 Honda Civic</span>
         </p>
          </a>
        
-    
-               
       </div>
       <div class="card">
-      <img src="images/civic.jpg" id="car">
+      <a  href="rentalcar2.php">
+      <img src="audi/audi.jpg" id="car">
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
-          debitis a. Atque ipsum minus rerum consequatur, officiis doloremque
-          ullam soluta ex consectetur inventore facilis nam optio sunt cum unde
-          repudiandae.
+          <span>2020 Audi A5</span>
         </p>
           
-        <input  type="submit" formaction='/rentalcar1.php' value="Rent" class="button">
+        <!-- <input type="submit" formaction='/rentalcar1.php' value="Rent" class="button"> -->
 
       </div>
       <div class="card">
-      <img src="images/civic.jpg" id="car">
+      <a href="rentalcar3.php">
+      <img src="toyota/toyota.jpg" id="car">
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
-          debitis a. Atque ipsum minus rerum consequatur, officiis doloremque
-          ullam soluta ex consectetur inventore facilis nam optio sunt cum unde
-          repudiandae.
+          <span>2020 Toyota Camry</span>
         </p>
           
           
-        <input type="submit" formaction='/rentalcar1.php' value="Rent" class="button">
+        <!-- <input type="submit" formaction='/rentalcar1.php' value="Rent" class="button"> -->
       </div>
     </div>
 
@@ -133,34 +129,30 @@ session_start();
 
      <div class="center">
       <div class="card">
-      <img src="images/civic.jpg" id="car">
+      <a href="rentalcar4.php">
+      <img src="jeep/jeep.jpg" id="car">
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
-          debitis a. Atque ipsum minus rerum consequatur, officiis doloremque
-          ullam soluta ex consectetur inventore facilis nam optio sunt cum unde
-          repudiandae.
+          <span>2020 Jeep Sahara</span>
         </p>
-        <input type="submit" name="submit" value="Rent" class="button">
+        <!-- <input type="submit" name="submit" value="Rent" class="button"> -->
       </div>
       <div class="card">
-      <img src="images/civic.jpg" id="car">
+      <a href="rentalcar5.php">
+      <img src="ford/ford.jpg" id="car">
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
-          debitis a. Atque ipsum minus rerum consequatur, officiis doloremque
-          ullam soluta ex consectetur inventore facilis nam optio sunt cum unde
-          repudiandae.
+          <span>2020 Ford Explorer</span>
         </p>
-        <input type="submit" name="submit" value="Rent" class="button">
+        <!-- <input type="submit" name="submit" value="Rent" class="button"> -->
 
       </div>
       <div class="card">
-      <img src="images/civic.jpg" id="car">
+      <a href="rentalcar6.php">
+      <img src="nissan/nissan.png" id="car">
+      <br>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto,
-          debitis a. Atque ipsum minus rerum consequatur, officiis doloremque
-          ullam soluta ex consectetur inventore facilis nam optio sunt cum unde.
+          <span>2020 Nissan Maxima<span>
         </p>
-        <input type="submit" name="submit" value="Rent" class="button">
+        <!-- <input type="submit" name="submit" value="Rent" class="button"> -->
       </div>
     </div>
 
