@@ -1,7 +1,7 @@
 
 <?php
  include 'configdb.php';
- include 'insertreg.php'
+ include 'insertreg.php';
 
 
 ?>
@@ -68,7 +68,7 @@
 </nav>
 
 
-     <form autocomplete='off' class='form' action='home.php' method='POST'>
+     <form autocomplete='off' class='form' action='' method='POST'>
 
           <div class='control'>
     <h1>
