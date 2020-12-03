@@ -1,7 +1,7 @@
 <?php
-	
+
 require 'configdb.php';
- 
+
 
 ?>
 
@@ -31,27 +31,27 @@ require 'configdb.php';
 <body>
 
     <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
-  <a class="navbar-brand" href="#">J & M Rentals</a>
+  <a class="navbar-brand" href="home.php">J & M Rentals</a>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="true">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div id="navb" class="navbar-collapse collapse hide">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="home.php">Home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://github.com/JayHoward16/Projectfall2020/blob/main/README.md">About us</a>
       </li>
-    
+
     </ul>
 
         <ul class="nav navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#"><span class="fas fa-user"></span> Sign Up</a>
+        <a class="nav-link" href="registrationform.php"><span class="fas fa-user"></span> Sign Up</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><span class="fas fa-sign-in-alt"></span> Login</a>
+        <a class="nav-link" href="loginjm.php"><span class="fas fa-sign-in-alt"></span> Login</a>
       </li>
     </ul>
   </div>
@@ -59,8 +59,8 @@ require 'configdb.php';
 
     <!-- <div class="car">
     <img width="940" height="427" src="images/civic.jpg">
-    
-    
+
+
     </div>
 <div class="container-fluid text-center bg-grey">
    <div class="row text-center">
@@ -81,45 +81,39 @@ require 'configdb.php';
           <img src="images/interiorfront.jpg" alt="Fjords">
             <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
           </div>
-        
+
     </div>
   </div>  -->
-  
+
   <!-- Slideshow sotra works -->
   <!-- <div class="w3-content w3-display-container">
   <img class="mySlides" src="images/civic.jpg" style="width:100%">
   <img class="mySlides" src="images/interiorfront.jpg" style="width:100%">
   <img class="mySlides" src="images/rearpic.jpg" style="width:100%">
   <img class="mySlides" src="images/sideview.jpg" style="width:100%">
-
   <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 </div>
-
 <style>
 .mySlides {
   display: none;
 }
 </style>
-
-
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
-
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
-
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+    x[i].style.display = "none";
   }
-  x[slideIndex-1].style.display = "block";  
+  x[slideIndex-1].style.display = "block";
 }
 </script> -->
 
@@ -146,9 +140,9 @@ function showDivs(n) {
 <br>
 
 <div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
 </div>
 
 <style>
@@ -240,14 +234,14 @@ function showSlides() {
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex > slides.length) {slideIndex = 1}
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
@@ -274,43 +268,14 @@ function showSlides() {
             <input type="date" name="return-date" id="return-date">
           </div>
 
-    
 
 
-          <h3>Driver's Informations</h3>
+
           <div class="driver-infos">
-            <div class="reservation-infos">
-              <label for="">First Name</label>
-              <input type="text" name="first-name" id="first-name">
-            </div>
-            <div class="reservation-infos">
-              <label for="">Last Name</label>
-              <input type="text" name="last-name" id="last-name">
-            </div>
-            <div class="reservation-infos">
-              <label for="">Address</label>
-              <input type="text" name="address" id="address">
-            </div>
-            <div class="reservation-infos">
-              <label for="">Country</label>
-              <input type="text" name="country" id="country">
-            </div>
-            <div class="reservation-infos">
-              <label for="">City</label>
-              <input type="text" name="city" id="city">
-            </div>
-            <div class="reservation-infos">
-              <label for="">Phone</label>
-              <input type="tel" name="phone" id="phone">
-            </div>
-            <div class="reservation-infos">
-              <label for="">Email</label>
-              <input type="email" name="email" id="email">
-            </div>
-        
-            <div class="reservation-infos">
-              <button>Rent</button>
-            </div>
+
+
+             <input type="submit" formaction='home.php' value="Proceed to Checkout" class="button">
+
           </div>
 
 
