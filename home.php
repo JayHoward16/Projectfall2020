@@ -1,4 +1,3 @@
-
 <?php
 include 'configdb.php';
 session_start();
@@ -99,6 +98,10 @@ session_start();
       <img src="images/civic.jpg" id="car">
         <p>
           <span>2020 Honda Civic</span>
+            <p>32 mpg</p>
+            <p>4 Door Hatchback</p>
+            <p>Medium Size Vechicle</p>
+            <span>$32 per day</span>
         </p>
          </a>
 
@@ -108,6 +111,10 @@ session_start();
       <img src="audi/audi.jpg" id="car">
         <p>
           <span>2020 Audi A5</span>
+            <p>27 mpg</p>
+            <p>4 Door Hatchback</p>
+            <p>Medium Size Vechicle</p>
+            <span>$60 per day</span>
         </p>
 
         <!-- <input type="submit" formaction='/rentalcar1.php' value="Rent" class="button"> -->
@@ -118,6 +125,10 @@ session_start();
       <img src="toyota/toyota.jpg" id="car">
         <p>
           <span>2020 Toyota Camry</span>
+            <p>26 mpg</p>
+            <p>4 Door Sedan</p>
+            <p>Medium Size Vechicle</p>
+            <span>$30 per day</span>
         </p>
 
 
@@ -134,6 +145,10 @@ session_start();
       <img src="jeep/jeep.jpg" id="car">
         <p>
           <span>2020 Jeep Sahara</span>
+            <p>20 mpg</p>
+            <p>Off road vechicle</p>
+            <p>Large Size Vechicle</p>
+            <span>$25 per day</span>
         </p>
         <!-- <input type="submit" name="submit" value="Rent" class="button"> -->
       </div>
@@ -142,6 +157,10 @@ session_start();
       <img src="ford/ford.jpg" id="car">
         <p>
           <span>2020 Ford Explorer</span>
+            <p>24 mpg</p>
+            <p>4 Door SUV</p>
+            <p>Large Size Vechicle</p>
+            <span>$33 per day</span>
         </p>
         <!-- <input type="submit" name="submit" value="Rent" class="button"> -->
 
@@ -152,6 +171,10 @@ session_start();
       <br>
         <p>
           <span>2020 Nissan Maxima<span>
+            <p>24 mpg</p>
+            <p>4 Door Sedan</p>
+            <p>Medium Size Vechicle</p>
+            <span>$37 per day</span>
         </p>
         <!-- <input type="submit" name="submit" value="Rent" class="button"> -->
       </div>

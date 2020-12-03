@@ -275,7 +275,12 @@ function showSlides() {
           </div>
         </div>
 
+        <div class="driver-infos">
 
+
+           <input type="submit"  name="submit" onclick="return alert('Reserved Dates')" value="Proceed to Checkout" class="button">
+
+        </div>
 
 </body>
 </html>

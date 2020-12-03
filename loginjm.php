@@ -72,7 +72,7 @@ session_start();
 
          <div class='control block-cube block-input'>
 
-        User Name:<input type='text' name='username' placeholder='Username' required>
+        User Name:<input type='text' name='UserNAME' placeholder='Username' required>
 
                <div class='bg-top'>
       <div class='bg-inner'></div>
@@ -86,7 +86,7 @@ session_start();
   </div>
         <div class='control block-cube block-input'>
 
-        Password:<input type='password' name='password' placeholder='Password' required>
+        Password:<input type='password' name='UserPassword' placeholder='Password' required>
 
              <div class='bg-top'>
       <div class='bg-inner'></div>
@@ -109,42 +109,33 @@ session_start();
     <div class='bg'>
       <div class='bg-inner'></div>
     </div>
-   <div class='text'>
+  <div class='text'>
      Log in
     </div>
     </form>
 
-        <?php
-          if($_SERVER["REQUEST_METHOD"] == "POST") {
-      // username and password sent from form
+    <?php
+include("configdb.php");
 
-      $UserNAME = mysqli_real_escape_string($conn,$_POST['UserNAME']);
-      $UserPassword = mysqli_real_escape_string($conn,$_POST['UserPassword']);
-      $start = 1;
-      $sql = "SELECT Client_ID FROM client WHERE UserNAME = '$UserNAME' and UserPassword = '$UserPassword'";
-      $result = mysqli_query($conn,$sql);
-      $row = mysqli_fetch_array($result);
+if(isset($_POST['submit']))
+{
+$UserNAME = $_POST['UserNAME'];
+$UserPassword = $_POST['UserPassword'];
 
+$res = mysqli_query($conn,"select* from client where UserNAME='$UserNAME'and UserPassword='$UserPassword'");
+$result=mysqli_fetch_array($res);
+if($result)
+{
+echo "You are login Successfully ";
+header("location:home.php");
 
-      $count = mysqli_num_rows($result);
-
-
-
-      if($count == 1) {
-
-         $_SESSION['login_user'] =  $UserNAME;
-
-         header("location: home.php");
-      }else {
-         $error = "Your Login Name or Password is invalid";
-      }
-   }
-
-
-
-
-         ?>
-
+}
+else
+{
+echo "failed ";
+}
+}
+?>
 
     <style>
 

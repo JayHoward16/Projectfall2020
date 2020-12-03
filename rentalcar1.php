@@ -254,18 +254,18 @@ function showSlides() {
 
      <div class="primary-content">
       <section class="form-section">
-        <form action="" class="reservation-form">
+        <form action="reservecar.php" class="reservation-form">
           <h1>Reservation Form</h1>
 
-          <h3>Rental Informations</h3>
+        
           <div class="reservation-infos ">
             <label for="">Pick Up Date</label>
-            <input type="date" name="pick-date" id="pick-date">
+            <input type="date" name="FROM_DT_TIME" id="pick-date">
           </div>
 
           <div class="reservation-infos">
             <label for="">Return date</label>
-            <input type="date" name="return-date" id="return-date">
+            <input type="date" name="RET_DT_TIME" id="return-date">
           </div>
 
 
@@ -274,7 +274,7 @@ function showSlides() {
           <div class="driver-infos">
 
 
-             <input type="submit" formaction='home.php' value="Proceed to Checkout" class="button">
+             <input type="submit"  name="submit" onclick="return alert('Reserved Dates')" value="Proceed to Checkout" class="button">
 
           </div>
 
