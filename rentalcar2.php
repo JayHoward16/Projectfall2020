@@ -1,7 +1,7 @@
 <?php
-	
+
 require 'configdb.php';
- 
+
 
 ?>
 
@@ -43,15 +43,15 @@ require 'configdb.php';
       <li class="nav-item">
         <a class="nav-link" href="https://github.com/JayHoward16/Projectfall2020/blob/main/README.md">About us</a>
       </li>
-    
+
     </ul>
 
         <ul class="nav navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#"><span class="fas fa-user"></span> Sign Up</a>
+        <a class="nav-link" href="registrationform.php"><span class="fas fa-user"></span> Sign Up</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><span class="fas fa-sign-in-alt"></span> Login</a>
+        <a class="nav-link" href="loginjm.php"><span class="fas fa-sign-in-alt"></span> Login</a>
       </li>
     </ul>
   </div>
@@ -59,8 +59,8 @@ require 'configdb.php';
 
     <!-- <div class="car">
     <img width="940" height="427" src="images/civic.jpg">
-    
-    
+
+
     </div>
 <div class="container-fluid text-center bg-grey">
    <div class="row text-center">
@@ -81,10 +81,10 @@ require 'configdb.php';
           <img src="images/interiorfront.jpg" alt="Fjords">
             <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
           </div>
-        
+
     </div>
   </div>  -->
-  
+
   <!-- Slideshow sotra works -->
   <!-- <div class="w3-content w3-display-container">
   <img class="mySlides" src="images/civic.jpg" style="width:100%">
@@ -117,9 +117,9 @@ function showDivs(n) {
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+    x[i].style.display = "none";
   }
-  x[slideIndex-1].style.display = "block";  
+  x[slideIndex-1].style.display = "block";
 }
 </script> -->
 
@@ -146,9 +146,9 @@ function showDivs(n) {
 <br>
 
 <div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
 </div>
 
 <style>
@@ -240,14 +240,14 @@ function showSlides() {
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
+  if (slideIndex > slides.length) {slideIndex = 1}
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";  
+  slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
