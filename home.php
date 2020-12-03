@@ -32,7 +32,7 @@ session_start();
 
 
 <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
-  <a class="navbar-brand" href="#">J & M Rentals</a>
+  <a class="navbar-brand" href="">J & M Rentals</a>
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb" aria-expanded="true">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -49,10 +49,10 @@ session_start();
 
     <ul class="nav navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#"><span class="fas fa-user"></span> Sign Up</a>
+        <a class="nav-link" href="registrationform.php"><span class="fas fa-user"></span> Sign Up</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><span class="fas fa-sign-in-alt"></span> Login</a>
+        <a class="nav-link" href="loginjm.php"><span class="fas fa-sign-in-alt"></span> Login</a>
       </li>
     </ul>
   </div>
